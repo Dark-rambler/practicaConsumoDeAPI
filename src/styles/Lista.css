@@ -1,0 +1,9 @@
+.agrandar:hover{
+    
+    transform: scale(1.1);
+    transition: .5s;
+}
+.agrandar{
+    
+    transition: .5s;
+}
