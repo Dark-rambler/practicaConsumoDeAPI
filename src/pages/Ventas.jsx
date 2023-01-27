@@ -7,7 +7,6 @@ function Ventas(){
 return(
     <div>
             <Header/>
-       
             <Lista/>
             <Footer/>
 

@@ -7,6 +7,8 @@ import Modal from "./modal";
 function Lista() {
     const [pokemons, setPokemons] = useState([]);
     const [seleccionado, setSeleccionado]=useState({name:"pruba", sprites:{front_default:"https://cnnespanol.cnn.com/wp-content/uploads/2022/07/220713165438-rba-web-nasa-full-169.jpg?quality=100&strip=info&w=384&h=216&crop=1"},});
+    const [num, setNum]=useState(1);
+    const [modal,setModal]=useState(false)
     const buscar = "pokemon"
 
 
@@ -17,7 +19,7 @@ function Lista() {
         setPokemons([])
        
 
-         for (let i = 1; i <22; i++){
+         for (let i = num; i <21+num; i++){
             fetch(`https://pokeapi.co/api/v2/pokemon/${i}`)
             .then(response=>response.json())
             .then(data=>setPokemons(prev=>[...prev, data] ))
@@ -28,24 +30,22 @@ function Lista() {
  
       //  console.log(pokemons,"here")
 
-    }, [])
+    }, [num])
 
    
 
     return (
         <div className="text-secondary container position-relative text-center mt-5 pt-5 ">
                        <Modal 
-                       register={true}
-                       name={seleccionado.name}
-                       front={seleccionado.sprites.front_default}
-                       back={seleccionado.sprites.back_default}
+                       register={modal}
+                       datos={seleccionado}
                        />
 
             {pokemons != null ? (
                 <div className="row  ">
                     {pokemons.map(personaje => (
                     <div className="col-sm-12 col-lg-4 d-flex  text-light justify-content-center ">
-                        <div class="card bg-dark col  col-lg-7 mt-4 agrandar  "   type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={()=>{setSeleccionado(personaje); console.log(seleccionado) }} >
+                        <div class="card bg-dark col  col-lg-7 mt-4 agrandar  "   type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={()=>{setSeleccionado(personaje); setModal(true); console.log(seleccionado) }} >
                             <div class="card-body ">
                                 <h4 class="card-title">  {
                                     personaje.name
@@ -60,8 +60,8 @@ function Lista() {
                             </div>))}
 
                             <span className="fs-3 mt-4  ">
-                            <i class="fa-solid fa-arrow-left me-5  agrandar" />
-                            <i class="fa-solid fa-arrow-right ms-5 agrandar"/>
+                            <i class="fa-solid fa-arrow-left me-5  agrandar" onClick={()=>{if(num>1){setNum(num-21)}}}/>
+                            <i class="fa-solid fa-arrow-right ms-5 agrandar" onClick={()=>{setNum(num+21)}}/>
                             </span>
                 </div>
                 
