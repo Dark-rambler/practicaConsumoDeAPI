@@ -39,6 +39,7 @@ function Lista() {
                        <Modal 
                        register={modal}
                        datos={seleccionado}
+                       cerrar={()=>{setModal(false)}}
                        />
 
             {pokemons != null ? (

@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import Modal from "./modal";
+import { Link } from "react-router-dom";
 function Header() {
   
         //data-bs-toggle="modal" data-bs-target="#exampleModal"
@@ -9,13 +10,13 @@ function Header() {
         <div className="bg-primary py-sm-1 py-lg-3 fixed-top ">
             <ul class="nav justify-content-center fs-3 ">
             <li class="nav-item">
-            <a class="nav-link active" href="#">Todos</a>
+            <Link className="nav-link" to={"/"}>Home </Link> 
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <Link className="nav-link" to={"/todos"}>Todos </Link>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <Link className="nav-link" to={"/pokedex"}>Pokedex </Link>
             </li>
 
             <li class="nav-item mt-lg-3 mt-sm-2 me-2 ms-lg-5 ps-lg-5">
