@@ -27,7 +27,7 @@ function Inicio(){
                             </div>
                     </section>
                     <section className="w-50 col col-sm-12  ">
-                    <img src="../src/images/pngwing.com.png" className="  img-fluid" width={"500px"} alt="" />
+                    <img src="https://raw.githubusercontent.com/Dark-rambler/practicaConsumoDeAPI/main/pngwing.com.png" className="  img-fluid" width={"500px"} alt="" />
                     </section>
                     </div>
 
