@@ -9,15 +9,15 @@ function Informacion(){
             <div className="texto text-light  position-relative container rounded ">
                 <article className="d-flex flex-column p-5 align-items-center ">
                     <h1 className="fs-1 ">
-                    Proposito de la pagina     
+                    Propósito de la pagina     
                     </h1>
                     <p className="fs-4">
-                        Esta pagina ha sido creada por Edwin Ramiro Garcia Chambilla con el unico proposito de practicar en 
-                        sus habilidades de desarrollo web, en especifico en el consumo i manejo de datos de API's utilizando 
+                        Esta pagina ha sido creada por Edwin Ramiro Garcia Chambilla con el unico propósito de practicar en 
+                        sus habilidades de desarrollo web, en específico en el consumo y manejo de datos de API's utilizando 
                         una api gratuita conocida como "pokeAPI" para realizar el proyecto, este proyecto y en general todos los 
                         proyectos que se muestran en este portafolio estan en actualizaciones constantes con el fin de cada vez mejorar 
                         un poco mas en las habilidades del desarrollador, las tecnologias utilizadas en el desarrollo de esta fueron: 
-                        <br /> <strong>"Html, Css, Javascript, React, Bootstrap " </strong>
+                          <strong>  "Html, Css, Javascript, React  y Bootstrap" </strong>
                     </p>
                 </article>        
             </div>

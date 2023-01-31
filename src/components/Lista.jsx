@@ -5,6 +5,7 @@ import "../styles/Lista.css"
 import Fondo from "./Fondo";
 //import Listar from "../functions/consultas";
 import Modal from "./modal";
+import Footer from "./Footer";
 function Lista() {
     const [pokemons, setPokemons] = useState([]);
     const [seleccionado, setSeleccionado]=useState({name:"pruba", sprites:{front_default:"https://cnnespanol.cnn.com/wp-content/uploads/2022/07/220713165438-rba-web-nasa-full-169.jpg?quality=100&strip=info&w=384&h=216&crop=1"},});

@@ -28,11 +28,11 @@
     animation:200s scroll2 infinite linear;
   }
   
-  .o4{
+ /* .o4{
     background:url(//image.ibb.co/b8VcuT/clouds.png);
     z-index: 3;
     animation:400s scroll infinite linear;
-  }
+  }*/
   
   @-webkit-keyframes scroll{
     100%{

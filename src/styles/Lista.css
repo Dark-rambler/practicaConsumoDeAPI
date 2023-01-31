@@ -10,3 +10,6 @@
 .lista{
     z-index:3;
 }
+.footer{
+    z-index: 4;
+}
