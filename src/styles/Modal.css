@@ -6,12 +6,7 @@
     background-color: rgba(0,0,0,.5);
     position: absolute;
     left: 0px;
-    z-index: 2;
+    z-index: 4;
     position: fixed;
 }
-.contenedor{
-   
-   
 
-
-}

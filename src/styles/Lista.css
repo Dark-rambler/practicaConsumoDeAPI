@@ -7,3 +7,6 @@
     
     transition: .5s;
 }
+.lista{
+    z-index:3;
+}

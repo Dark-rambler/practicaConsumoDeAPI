@@ -7,25 +7,25 @@ function Header() {
         //data-bs-toggle="modal" data-bs-target="#exampleModal"
     
     return (
-        <div className="bg-primary py-sm-1 py-lg-3 fixed-top ">
-            <ul class="nav justify-content-center fs-3 ">
-            <li class="nav-item">
+        <div className="bg-primary py-sm-1 py-lg-3 fixed-top row">
+
+            <Link className="nav-link d-none d-lg-inline col" to={"/"}> <img src="https://cdn-icons-png.flaticon.com/512/1752/1752776.png" width={"70px "} className="ms-5 "  alt="" /> </Link>
+            <ul class="nav justify-content-center fs-3 me-5 col">
+            
+            <li class="nav-item ">
             <Link className="nav-link" to={"/"}>Home </Link> 
             </li>
             <li class="nav-item">
             <Link className="nav-link" to={"/todos"}>Todos </Link>
             </li>
             <li class="nav-item">
-            <Link className="nav-link" to={"/pokedex"}>Pokedex </Link>
+            <Link className="nav-link" to={"/informacion"}>Informacion </Link>
             </li>
+            <div className="ms-5 me-5 ">
 
-            <li class="nav-item mt-lg-3 mt-sm-2 me-2 ms-lg-5 ps-lg-5">
-            <input type="text" class="form-control"  placeholder="Busca tu Pokemon"/>
-            </li>
-            <li className="nav-item mt-lg-2">
-            <button class="btn btn-info col"   type="button"  >Buscar</button>
+            </div>
 
-            </li>
+
             </ul>
             
             

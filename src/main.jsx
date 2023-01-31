@@ -4,8 +4,8 @@ import {createBrowserRouter, RouterProvider} from "react-router-dom"
 //import App from './App'
 import './index.css'
 import Ventas from './pages/Ventas'
-import Inicio from './pages/Pokedex'
-import Pokedex from './pages/Pokedex'
+import Inicio from './pages/Inicio'
+import Informacion from './pages/Informacion'
 const router = createBrowserRouter([
   {
     path: "/",
@@ -16,8 +16,8 @@ const router = createBrowserRouter([
     element:  <Ventas/>,
   },
   {
-    path: "/pokedex",
-    element: <Pokedex/>,
+    path: "/informacion",
+    element: <Informacion/>,
   },
 
 ]);

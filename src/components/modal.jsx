@@ -27,7 +27,7 @@ function Modal({register, datos, cerrar}){
           <div class="card w-25">
           <button type="button" class="btn-close ms-auto pt-3 pe-3 bg-danger  " onClick={()=>{cerrar()}} data-bs-dismiss="modal" aria-label="Close"></button>
             <div class="card-body">
-              <blockquote class="blockquote">
+              <blockquote class="blockquote bg-secondary rounded text-light">
                 <h1>{datos.name}</h1>
                 <footer class="card-blockquote "><img className="w-50" src={datos.sprites.front_default}  alt="" /><img className="w-50" src={datos.sprites.back_default} alt="" /></footer>
               </blockquote>

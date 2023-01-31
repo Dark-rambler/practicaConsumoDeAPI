@@ -1,0 +1,8 @@
+
+  .palabra{
+    z-index: 3;
+    margin-top: 10vh;
+    height: 70%;
+    width: 100%;
+    background-color:rgba(0, 255, 255, .1);
+}
