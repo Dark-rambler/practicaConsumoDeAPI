@@ -24,7 +24,7 @@ function Modal({register, datos, cerrar}){
 
       <div className="contenedor h-75 d-flex justify-content-center  align-items-center">
 
-          <div class="card w-25">
+          <div class="card w-sm-75 w-lg-25 ">
           <button type="button" class="btn-close ms-auto pt-3 pe-3 bg-danger  " onClick={()=>{cerrar()}} data-bs-dismiss="modal" aria-label="Close"></button>
             <div class="card-body">
               <blockquote class="blockquote bg-secondary rounded text-light">

@@ -72,7 +72,7 @@ function Lista() {
             <Fondo/>
             {pokemons != null ? (
                 <div className="row  ">
-                    <div className="d-flex justify-content-center">
+                    <div className="d-flex justify-content-center mt-5">
                     <div class="nav-item mt-lg-3 mt-sm-2 me-2 lista ">
             <input type="text" class="form-control "  placeholder="Busca tu Pokemon" onChange={ e=>setBuscar(e.target.value)}/>
             </div>
